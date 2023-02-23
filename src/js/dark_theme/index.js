@@ -95,7 +95,7 @@ changeCurrentMobilePage();
 // Слушатели для блокировки Сабмита
 const searchForm = document.querySelector('.header-form');
 const searchFormBtn = document.querySelector('.header-form__btn');
-const searchFormInput = document.querySelector('.header-form__input');
+export const searchFormInput = document.querySelector('.header-form__input');
 
 searchForm.addEventListener('focusin', e => {
   searchFormBtn.classList.add('is-active');

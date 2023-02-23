@@ -1,6 +1,6 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
-import { searchForm, searchFormInput, readNewsDateContainer, notFound } from '../refs/index';
+import { searchForm, readNewsDateContainer, notFound } from '../refs/index';
 import { getStorage } from '../local-storage/index';
 import { markUpPage } from '../markup/index';
 import {
@@ -13,8 +13,10 @@ import {
     auditArrayNews,
     idDone,
 idArray,
-} from '../favorites/feature'
+}
+  from '../favorites/feature'
 
+  import searchFormInput from '../dark_theme/index'
 searchForm.addEventListener('submit', handleSubmitSearchForm);
 idDone()
 function handleSubmitSearchForm(event) {
