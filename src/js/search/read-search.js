@@ -18,6 +18,8 @@ idArray,
 searchForm.addEventListener('submit', handleSubmitSearchForm);
 idDone()
 function handleSubmitSearchForm(event) {
+
+  searchForm.blur()
   event.preventDefault();
 
   const searchingNews = event.target.search.value.trim().toLowerCase();
