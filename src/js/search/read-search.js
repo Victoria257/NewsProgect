@@ -15,11 +15,13 @@ import {
 idArray,
 } from '../favorites/feature'
 
+const logoNews = document.querySelector('.logo');
 searchForm.addEventListener('submit', handleSubmitSearchForm);
 idDone()
 function handleSubmitSearchForm(event) {
-  input.blur();
   event.preventDefault();
+  input.blur();
+  logoNews.focus();
 
   const searchingNews = event.target.search.value.trim().toLowerCase();
 
