@@ -19,6 +19,7 @@ searchForm.addEventListener('submit', handleSubmitSearchForm);
 idDone()
 function handleSubmitSearchForm(event) {
   event.preventDefault();
+  // kod
 
   const searchingNews = event.target.search.value.trim().toLowerCase();
 
