@@ -1,6 +1,6 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
-import { searchForm, readNewsDateContainer, notFound } from '../refs/index';
+import { searchForm,input, readNewsDateContainer, notFound } from '../refs/index';
 import { getStorage } from '../local-storage/index';
 import { markUpPage } from '../markup/index';
 import {
@@ -18,8 +18,7 @@ idArray,
 searchForm.addEventListener('submit', handleSubmitSearchForm);
 idDone()
 function handleSubmitSearchForm(event) {
-
-  searchForm.blur()
+  input.blur();
   event.preventDefault();
 
   const searchingNews = event.target.search.value.trim().toLowerCase();
