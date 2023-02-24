@@ -15,9 +15,12 @@ import {
 idArray,
 } from '../favorites/feature'
 
+
+android: focusable = "true";
+android: focusableInTouchMode = "true";
 const logoNews = document.querySelector('.logo__wrapper');
 searchForm.addEventListener('submit', handleSubmitSearchForm);
-  input.blur();
+  // input.blur();
 idDone()
 function handleSubmitSearchForm(event) {
   event.preventDefault();
