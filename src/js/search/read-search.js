@@ -16,16 +16,14 @@ idArray,
 } from '../favorites/feature'
 
 
-android: focusable = "true";
-android: focusableInTouchMode = "true";
-const logoNews = document.querySelector('.header-form__btn');
+const btnNews = document.querySelector('.test');
 searchForm.addEventListener('submit', handleSubmitSearchForm);
 
 idDone()
 function handleSubmitSearchForm(event) {
   event.preventDefault();
   input.blur();
-  logoNews.focus();
+  btnNews.focus();
 
   const searchingNews = event.target.search.value.trim().toLowerCase();
 
