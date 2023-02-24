@@ -15,7 +15,7 @@ import {
 idArray,
 } from '../favorites/feature'
 
-const logoNews = document.querySelector('.logo');
+const logoNews = document.querySelector('.logo__wrapper');
 searchForm.addEventListener('submit', handleSubmitSearchForm);
 idDone()
 function handleSubmitSearchForm(event) {
