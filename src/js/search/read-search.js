@@ -33,7 +33,7 @@ function handleSubmitSearchForm(event) {
 
   searchFromCurrentPage(searchingNews);
 
-  event.currentTarget.reset();
+  // event.currentTarget.reset();
 }
 
 function searchFromCurrentPage(searchingNews) {
