@@ -6,6 +6,7 @@ import {
 } from '../pagination/index';
 
 import {
+  input,
   listNews,
   searchForm,
   notFound,
@@ -37,10 +38,16 @@ export function setDateApi(value) {
 searchForm.addEventListener('submit', handleSubmitSearchForm);
 
 function handleSubmitSearchForm(event) {
+    event.preventDefault();
   //-----
-  this.blur();
+  input.blur();
+  console.log(event);
+  console.log(event.target);
+  console.log(event.target.elements);
+
+  input.blur();
   //----
-  event.preventDefault();
+
   const searchingNews = event.target.search.value.trim().toLowerCase();
 
   if (!searchingNews) {

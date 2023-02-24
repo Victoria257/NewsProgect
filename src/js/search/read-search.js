@@ -21,10 +21,7 @@ searchForm.addEventListener('submit', handleSubmitSearchForm);
 
 idDone()
 function handleSubmitSearchForm(event) {
-  event.preventDefault();
-  input.blur();
-
-
+    event.preventDefault();
   const searchingNews = event.target.search.value.trim().toLowerCase();
 
   if (!searchingNews) {
@@ -33,7 +30,7 @@ function handleSubmitSearchForm(event) {
 
   searchFromCurrentPage(searchingNews);
 
-  // event.currentTarget.reset();
+  event.currentTarget.reset();
 }
 
 function searchFromCurrentPage(searchingNews) {
