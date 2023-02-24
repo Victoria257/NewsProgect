@@ -17,11 +17,12 @@ idArray,
 
 const logoNews = document.querySelector('.logo__wrapper');
 searchForm.addEventListener('submit', handleSubmitSearchForm);
+  input.blur();
 idDone()
 function handleSubmitSearchForm(event) {
   event.preventDefault();
-  input.blur();
-  logoNews.focus();
+
+  // logoNews.focus();
 
   const searchingNews = event.target.search.value.trim().toLowerCase();
 
