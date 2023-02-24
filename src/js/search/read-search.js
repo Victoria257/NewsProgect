@@ -16,14 +16,14 @@ idArray,
 } from '../favorites/feature'
 
 
-const btnNews = document.querySelector('.test');
+
 searchForm.addEventListener('submit', handleSubmitSearchForm);
 
 idDone()
 function handleSubmitSearchForm(event) {
   event.preventDefault();
-  input.blur();
-  btnNews.focus();
+  event.target.input.blur();
+
 
   const searchingNews = event.target.search.value.trim().toLowerCase();
 
